@@ -62,11 +62,20 @@ public class TaskController : ControllerBase
 
             Console.WriteLine(sql);
 
+        switch (task.Status)
+        {
+            case "Started":
+            case "In Progress":
+            case "Completed":
+                break;
+            default:
+            throw new Exception("Status field should be either Started, In Progress or Completed");
+
+        }
             if (_dapper.ExecuteSql(sql))
             {   
                 return Ok();
             }
-
             throw new Exception("Failed to Update Task");
         }
 
@@ -83,10 +92,21 @@ public class TaskController : ControllerBase
                 "'" + task.Title +
                 "', '" + task.Description +
                 "', '" + task.Status +
-                "', '" + task.DueDateTime +
+                "', '" + task.DueDateTime.ToString("MM/dd/yyyy hh:mm:ss") +
                 "')";
 
             Console.WriteLine(sql);
+
+            switch (task.Status)
+        {
+            case "Started":
+            case "In Progress":
+            case "Completed":
+                break;
+            default:
+            throw new Exception("Status field should be either Started, In Progress or Completed");
+
+        }
 
             if (_dapper.ExecuteSql(sql))
             {   

@@ -70,3 +70,4 @@ C:\Users\micke\OneDrive - businessalchemy.uk\CodeChallenge\CodeChallenge\obj\Deb
 C:\Users\micke\OneDrive - businessalchemy.uk\CodeChallenge\CodeChallenge\obj\Debug\net10.0\CodeChallenge.pdb
 C:\Users\micke\OneDrive - businessalchemy.uk\CodeChallenge\CodeChallenge\obj\Debug\net10.0\CodeChallenge.genruntimeconfig.cache
 C:\Users\micke\OneDrive - businessalchemy.uk\CodeChallenge\CodeChallenge\obj\Debug\net10.0\ref\CodeChallenge.dll
+C:\Users\micke\OneDrive - businessalchemy.uk\CodeChallenge\CodeChallenge\obj\Debug\net10.0\CodeChallenge.sourcelink.json
